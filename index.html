@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <title>siteweb pour une agence de location de tout type de véhicules</title>
+    <meta name="description" content="Ce brief project consiste sur la création d'un siteweb pour une agence de location de tout type de véhicules.">
+</head>
+<body class="index">
+    
+    <nav>
+        <div class="menu">
+            <img id="logo" src="./logo/logocar.png" width="100px" >
+            
+            <ul id="menuUl">
+                <li ><a href="index.html" class="active">HOME</a></li>
+                <li><a href="gallerie.html">GALLERIE</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div id="icon-menu" onclick="berguerMenu(this)">
+                <div class="first-bar"></div>
+                <div class="second-bar"></div>
+                <div class="third-bar"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallerie.html">GALLERIE</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div>
+        <h1 class="title">Quality Cars with Unlimited Miles</h1>
+        <p class="descrip">Maecenas viverra porta eros, <br> tincidunt lorem rhoncus eget.<br>
+          Aliquam erat volutpat.
+          </p>
+       
+
+          <div class="bouton">
+            <p>
+             <a href="reservation.html">BOOK NOW</a>
+           </p>
+            </div>
+
+
+
+
+        <footer class="footer-ic">
+            <p class=copyr><strong>Copyright©RentMeNow</strong> </p>
+  
+            <p class="nav-footer-social-buttons">
+              <a class="fa-icon" href="https://www.instagram.com/" title="">
+                <i class="fa fa-instagram"><img src="./logo/insta.png" alt="insta" style="width:20px; height:20px;"></i>
+              </a>
+              <a class="fa-icon" href="https://dribbble.com/" title="">
+                <i class="fa fa-linkedin"><img src="./logo/in.png" alt="linkedin" style="width:20px; height:20px;"></i>
+              </a>
+              <a class="fa-icon" href="https://twitter.com/" title="">
+                <i class="fa fa-twitter"><img src="./logo/twitter.png" alt="twitter" style="width:25px; height:20px;"></i>
+              </a>
+            </p>
+          
+            <p class="info">
+                <img src="./logo/message.png" alt="" style="width:30px; height:30px;" >support@example.com<br>sale@example.com<img>
+                <img src="./logo/adresse.png" alt="" style="width:25px; height:30px;">1425 Lane,Miami<br>Florida-3169,USA<img>
+                <img src="./logo/phone.png" alt="" style="width:25px; height:30px;">(954)-944-1250<br>(954)-944-1251<img>
+            </p>
+          </footer>
+
+
+
+
+
+          <script src="app.js">
+            function berguerMenu(menu) {
+    menu.classList.toggle('open');
+    }
+          </script>
+
+
+
+
+
+
+</body>
+</html>

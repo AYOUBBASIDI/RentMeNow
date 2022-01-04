@@ -1,0 +1,984 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html{
+  height: 100%;
+}
+.index{
+    background-image:url("./background/background-voiture.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh ;
+    }
+
+* {
+    color:rgb(255, 255, 255);
+    font-family: "Roboto Mono";
+    margin:0px;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-between;
+  }
+  #menuUl{
+    margin-top: 3%;
+    margin-right: 6%;
+  }
+  #logo{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  li{
+    font-size: 14px;
+    margin: 0 25px;
+  }
+
+  .active{
+    border-bottom: 3px solid #8177FF;
+    border-radius: 3px;
+}
+
+#icon-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-top:3%;
+  }
+
+  #icon-menu ul li a{
+      color:white;
+      background-color: black;
+  }
+
+  #icon-menu div {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0px;
+    background-color:white;
+    transition: 0.3s;
+
+  }
+
+  .open .first-bar {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .open .second-bar {
+    opacity: 0;
+  }
+
+  .open .third-bar {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobile-menu {
+    background-color: black;
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 40%;
+    width: 35%;
+    padding-top: 20px;
+  }
+.mobile-menu li {
+    margin-bottom: 40px;
+    margin-left: 8px;
+  }
+
+
+
+
+    .copyr{
+        margin-left:30%;
+       margin-top: -0.05%;
+        color: white;
+        font-size: 12px;
+    }
+    .nav-footer-social-buttons{
+        margin-bottom:0;
+        margin-left:30px;
+        margin-top:-3.25%;
+    }
+    .fa-icon{
+        color:rgb(255, 255, 255);
+        width:40px;
+        height:40px;
+        display:inline-block;
+        line-height:32px;
+        font-size:15px;
+        text-align:center;
+    }
+    .info{
+      display:flex;
+      margin-left:730px;
+        margin-top:-4%;
+        font-size:13px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .title {
+      margin-top:8%;
+      margin-left:25% ;
+      font-family:"Roboto Mono";
+    }
+
+    .descrip{
+      color:white;
+      font-family:"Roboto Mono";
+      margin-left: 27%;
+      margin-top: 1%;
+      text-align: center;
+  }
+
+  .bouton a {
+    display:block;
+    width:120px;
+    line-height:50px;
+    text-align:center;
+    background-color: #958CFF;
+    color:white;
+    text-decoration:none;
+    margin-left: 59%;
+    margin-top: 2%;
+    font-family:"Roboto Mono";
+    border-radius: 3px;
+    }
+    .bouton a:hover {
+    background-color: #8177ff;
+    }
+
+  .contact { 
+    background-image:url(./background/black-background.jpg);
+   }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(255, 255, 255);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #958CFF;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#958CFF;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#4a3aff; }
+
+
+
+
+
+.gallerie{
+  background-image: url(./background/background-rent.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:flex;
+  flex-direction:column;
+  min-height: 100%;
+}
+
+  .footer-ic{
+
+    background:rgba(138, 138, 138, 0.3);
+    
+    position:absolute;
+
+    left: 0;
+    
+    bottom:0;
+    
+    width:100%;
+    
+    padding-top:50px; 
+    
+    height:20px;
+
+    margin-top: auto;
+
+    }
+    .footer-re{
+
+      background:rgba(138, 138, 138, 0.3);
+      
+      position:absolute;
+  
+      left: 0;
+      
+      bottom:0;
+      
+      width:100%;
+      
+      padding-top:50px; 
+      
+      height:20px;
+  
+      margin-top: auto;
+  
+      }
+    .gall-footer{
+
+      background:rgba(138, 138, 138, 0.3);
+      
+      position:bottom;
+  
+      left: 0;
+      
+      bottom:0;
+      
+      width:100%;
+      
+      padding-top:50px; 
+      
+      height:20px;
+  
+      margin-top: auto;
+  
+      }
+
+  .product{
+    background-image: url(./background/black-image-background.jpg);
+    margin-top: 10%;
+  }
+
+  .card {
+    background-image:url(./background/back-gall.jpg);
+    background-repeat: no-repeat;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float:left;
+    padding: 50px 60px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #958CFF;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius:10px;
+    margin-top:5px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+.gall-tit{
+  margin-top:10%;
+  margin-left: 40%;
+  color:#958CFF;
+
+}
+.gall-txt{
+  margin:1% 25%;
+  text-align:center;
+
+}
+
+#hed{
+  margin-top: 5%;
+  margin-left: 3%;
+  text-align:center;
+}
+#hed1{
+  margin-top: 3%;
+  margin-left: 24%;
+  display:none;
+}
+  #demo{
+    display:block;
+    width:150px;
+    line-height:50px;
+    text-align:center;
+    background-color: #958CFF;
+    color:white;
+    text-decoration:none;
+    margin-left: 44%;
+    margin-top: 2%;
+    font-family:"Roboto Mono";
+    border-radius: 10px;
+    }
+  #demo1{
+    display:block;
+    width:300px;
+    height: 150px;
+    line-height:50px;
+    background-image:url(./Fcars/CHOIX/2b.jpg);
+    background-size: cover;
+    background-position: center;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size:30px;
+    text-decoration:none;
+    margin-left: 1.5%;
+    margin-top: 3%;
+    font-family:"Roboto Mono";
+    border-radius: 10px;
+    display:none;
+    }
+    #demo2{
+      display:block;
+      width:300px;
+      height:150px;
+      background-image:url(./Fcars/CHOIX/1b.jpg);
+      background-size: cover;
+      background-position: center;
+      color:rgb(255, 255, 255);
+      font-weight: bolder;
+      font-size:30px;
+      text-decoration:none;
+      margin-left: 26%;
+      margin-top: -11.70%;
+      font-family:"Roboto Mono";
+      border-radius: 10px;
+      display: none;
+      }
+      #demo3{
+        width:300px;
+        height: 150px;
+        text-align:center;
+        background-image:url(./Fcars/CHOIX/3b.jpg);
+        background-size: cover;
+        background-position: center;
+        color:rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size:30px;
+        text-decoration:none;
+        margin-left: 50.5%;
+        margin-top: -11.70%;
+        font-family:"Roboto Mono";
+        border-radius: 10px;
+        display: none;
+        }
+        #demo4{
+          width:300px;
+          height: 150px;
+          text-align:center;
+          background-image:url(./Fcars/CHOIX/7b.jpg);
+          background-size: cover;
+          background-position: center;
+          color:rgb(255, 255, 255);
+          font-weight: bolder;
+          font-size:30px;
+          text-decoration:none;
+          margin-left: 75%;
+          margin-top: -11.70%;
+          font-family:"Roboto Mono";
+          border-radius: 10px;
+          display: none;
+          }
+          #demo5{
+            width:300px;
+            height: 150px;
+            text-align:center;
+            background-image:url(./Fcars/CHOIX/11b.jpg);
+            background-size: cover;
+            background-position: center;
+            color:rgb(255, 255, 255);
+            font-weight: bolder;
+            font-size:30px;
+            text-decoration:none;
+            margin-left: 12%;
+            margin-top: 1%;
+            font-family:"Roboto Mono";
+            border-radius: 10px;
+            display: none;
+            }
+            #demo6{
+              width:300px;
+              height: 150px;
+              text-align:center;
+              background-image:url(./Fcars/CHOIX/5b.jpg);
+              background-size: cover;
+              background-position: center;
+              color:rgb(255, 255, 255);
+              font-weight: bolder;
+              font-size:30px;
+              text-decoration:none;
+              margin-left:36.5%;
+              margin-top: -11.70%;
+              font-family:"Roboto Mono";
+              border-radius: 10px;
+              display: none;
+              }
+              #demo7{
+                width:300px;
+                height: 150px;
+                text-align:center;
+                background-image:url(./Fcars/CHOIX/8b.jpg);
+                background-size: cover;
+                background-position: center;
+                color:rgb(255, 255, 255);
+                font-weight: bolder;
+                font-size:30px;
+                text-decoration:none;
+                margin-left: 61%;
+                margin-top: -11.70%;
+                font-family:"Roboto Mono";
+                border-radius: 10px;
+                display: none;
+                }
+                #hed2{
+                  margin-top: 3%;
+                  margin-left: 25%;
+                  display:none;
+                }
+                #demo8 ,#demo10 ,#demo14 ,#demo17{
+                  width:300px;
+                  height: 150px;
+                  text-align:center;
+                  background-image:url(./Fcars/ess.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  color:rgb(255, 255, 255);
+                  font-weight: bolder;
+                  font-size:30px;
+                  text-decoration:none;
+                  margin-left: 25%;
+                  margin-top: 3%;
+                  font-family:"Roboto Mono";
+                  border-radius: 10px;
+                  display: none;
+                  }
+                  #demo9 ,#demo11{
+                    width:300px;
+                    height: 150px;
+                    text-align:center;
+                    background-image:url(./Fcars/elec.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    color:rgb(255, 255, 255);
+                    font-weight: bolder;
+                    font-size:30px;
+                    text-decoration:none;
+                    margin-left: 53%;
+                    margin-top: -11.70%;
+                    font-family:"Roboto Mono";
+                    border-radius: 10px;
+                    display: none;
+                    }
+                        #demo12{
+                          width:300px;
+                          height: 150px;
+                          text-align:center;
+                          background-image:url(./Fcars/diesel.jpg);
+                          background-size: cover;
+                          background-position: center;
+                          color:rgb(255, 255, 255);
+                          font-weight: bolder;
+                          font-size:30px;
+                          text-decoration:none;
+                          margin-left: 25%;
+                          margin-top: 1%;
+                          font-family:"Roboto Mono";
+                          border-radius: 10px;
+                          display: none;
+                          }
+                          #demo16 ,#demo19{
+                            width:300px;
+                            height: 150px;
+                            text-align:center;
+                            background-image:url(./Fcars/diesel.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            color:rgb(255, 255, 255);
+                            font-weight: bolder;
+                            font-size:30px;
+                            text-decoration:none;
+                            margin-left: 39%;
+                            margin-top: 1%;
+                            font-family:"Roboto Mono";
+                            border-radius: 10px;
+                            display: none;
+                            }
+                          #demo13{
+                            width:300px;
+                            height: 150px;
+                            text-align:center;
+                            background-image:url(./Fcars/hybride.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            color:rgb(255, 255, 255);
+                            font-weight: bolder;
+                            font-size:30px;
+                            text-decoration:none;
+                            margin-left: 53%;
+                            margin-top: -11.70%;
+                            font-family:"Roboto Mono";
+                            border-radius: 10px;
+                            display: none;
+                            }
+                              #demo15{
+                                width:300px;
+                                height: 150px;
+                                text-align:center;
+                                background-image:url(./Fcars/hybride.jpg);
+                                background-size: cover;
+                                background-position: center;
+                                color:rgb(255, 255, 255);
+                                font-weight: bolder;
+                                font-size:30px;
+                                text-decoration:none;
+                                margin-left: 53%;
+                                margin-top: -11.70%;
+                                font-family:"Roboto Mono";
+                                border-radius: 10px;
+                                display: none;
+                                }
+                                    #demo18{
+                                      width:300px;
+                                      height: 150px;
+                                      text-align:center;
+                                      background-image:url(./Fcars/hybride.jpg);
+                                      background-size: cover;
+                                      background-position: center;
+                                      color:rgb(255, 255, 255);
+                                      font-weight: bolder;
+                                      font-size:30px;
+                                      text-decoration:none;
+                                      margin-left: 53%;
+                                      margin-top: -11.70%;
+                                      font-family:"Roboto Mono";
+                                      border-radius: 10px;
+                                      display: none;
+                                      }                                    
+                                        #demo20{
+                                          width:300px;
+                                          height: 150px;
+                                          text-align:center;
+                                          background-image:url(./Fcars/elec.jpg);
+                                          background-size: cover;
+                                          background-position: center;
+                                          color:rgb(255, 255, 255);
+                                          font-weight: bolder;
+                                          font-size:30px;
+                                          text-decoration:none;
+                                          margin-left: 25%;
+                                          margin-top: 3%;
+                                          font-family:"Roboto Mono";
+                                          border-radius: 10px;
+                                          display: none;
+                                          }
+                                          #demo21{
+                                            width:300px;
+                                            height: 150px;
+                                            text-align:center;
+                                            background-image:url(./Fcars/ess.jpg);
+                                            background-size: cover;
+                                            background-position: center;
+                                            color:rgb(255, 255, 255);
+                                            font-weight: bolder;
+                                            font-size:30px;
+                                            text-decoration:none;
+                                            margin-left: 53%;
+                                            margin-top: -11.70%;
+                                            font-family:"Roboto Mono";
+                                            border-radius: 10px;
+                                            display: none;
+                                            }                         
+                                            form .field input{
+                                              color:rgb(255, 255, 255);
+                                              font-weight:500px;
+                                              font-size: 18px;
+                                              border-radius: 5px;
+                                              line-height: 22px;
+                                              background-color: transparent;
+                                              border:2px solid #958CFF;
+                                              transition: all 0.3s;
+                                              padding: 13px;
+                                              margin-bottom: 15px;
+                                              width:90%;
+                                              box-sizing: border-box;
+                                              outline:0;
+                                              margin-left: 20px;
+                                            }
+                                            .help{
+                                              font-family: Helvetica, Arial, sans-serif;
+                                              margin-left:30px ;
+                                              margin-top:5px;
+                                              font-size:13px;
+                                            }
+                                            #formuleF{
+                                              display:none;
+                                              width:30%;
+                                              margin-top:3%;
+                                              margin-left:35%; 
+                                            }
+                                           .submit{
+                                            display:block;
+                                            width:100px;
+                                            line-height:25px;
+                                            text-align:center;
+                                            background-color: #958CFF;
+                                            color:white;
+                                            text-decoration:none;
+                                            margin-left: 35%;
+                                            margin-top: -3%;
+                                            font-family:"Roboto Mono";
+                                            border-radius: 5px;
+                                            
+                                            }
+
+                                            .step1{
+                                              /* background-color:#958CFF ; */
+                                              width: 25%;
+                                              border:2px solid #958CFF;
+                                              padding: 10px 20px;
+                                              margin-top: 10%;
+                                              margin-left: 2%;
+                                              float:left;
+                                              border-radius: 10px;
+                                            }
+                                            .step2{
+                                              /* background-color:#958CFF ; */
+                                              width: 25%;
+                                              border:2px solid #958CFF;
+                                              padding: 10px 20px;
+                                              margin-top: 10%;
+                                              margin-left: 5%;
+                                              float:left;
+                                              border-radius: 10px;
+                                            }
+                                            .step3{
+                                              /* background-color:#958CFF ; */
+                                              width: 25%;
+                                              border:2px solid #958CFF;
+                                              padding: 10px 20px;
+                                              margin-left: 5%;
+                                              margin-top: 10%;
+                                              float:left;
+                                              border-radius: 10px;
+                                            }
+                                            #result{
+                                              margin-top: 1%;
+                                              margin-left: 34%;
+                                              border:2px solid #958CFF;
+                                              border-radius: 10px;
+                                              padding: 10px 20px;
+                                              width: 30%;
+                                            }
+                                            .hed{
+                                              color:#958CFF ;
+                                              font-size:15px;
+                                            }
+                                          
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    #menuUl{
+        display:none;
+      }
+      #icon-menu {
+        display: block;
+      }
+      #logo{
+        margin-top: 15px;
+        margin-left: 20px;
+        width:45px ;
+        height:25px;
+      }
+      .title {
+        margin-top:15%;
+        margin-left:5px ;
+        font-family:"Roboto Mono";
+        font-size:15px;
+        text-align:center;
+        padding:0px;
+      }
+  
+      .descrip{
+        color:white;
+        font-family:"Roboto Mono";
+        margin-left: 4%;
+        margin-top: 10%;
+        text-align: center;
+        font-size: 10px;
+    }
+  
+    .bouton a {
+      display:block;
+      width:120px;
+      line-height:50px;
+      text-align:center;
+      background-color: #958CFF;
+      color:white;
+      text-decoration:none;
+      margin-left: 34%;
+      margin-top: 10%;
+      font-family:"Roboto Mono";
+      border-radius: 3px;
+      }
+      .bouton a:hover {
+      background-color: #8177ff;
+      }
+      .footer-ic{
+
+        background:rgba(138, 138, 138, 0.3);
+        
+        position:absolute;
+        
+        bottom:0px;
+        
+        width:100%;
+        
+        padding-top:80px;
+        
+        height:5px;
+        
+    
+        }
+        .footer-re{
+
+          background:rgba(138, 138, 138, 0.3);
+          
+          
+          
+         margin-bottom: -260px;
+          
+          width:100%;
+          
+          padding-top:80px;
+          
+          height:5px;
+          
+      
+          }
+        .gall-footer{
+
+          background:rgba(138, 138, 138, 0.3);
+          
+          position:bottom;
+          
+          bottom:0px;
+          
+          width:100%;
+          
+          padding-top:80px;
+          
+          height:5px;
+      
+          }
+        .copyr{
+            margin-left:33%;
+           margin-top: -4%;
+            color: white;
+            font-size: 12px;
+        }
+        .nav-footer-social-buttons{
+            margin-bottom:0;
+            margin-left:0%;
+            margin-top:-15%;
+        }
+        .fa-icon{
+            color:rgb(255, 255, 255);
+            width:2%;
+            height:2%;
+            display:inline-block;
+            line-height:32px;
+            font-size:15px;
+            text-align:center;
+            margin-left: 5%;
+        }
+        .index{
+          background-image: url("./background/voiture-background.jpg");
+          background-position: center;
+          background-size:cover;
+          background-repeat: no-repeat;
+          height:100vh;
+
+          }
+          .info{
+            display:none;
+          }
+          
+          .feedback-input{
+            width:90%;
+            height:50px;
+            margin-left:5%;
+          }
+          [type="submit"]{
+            width:35%;
+            height:5%;
+            position:relative;
+            margin-top: 10px;
+            margin-left:5%;
+            
+          }
+          .card {
+            padding: 20px 18px;
+            width:100%;
+          }
+          .gall-tit{
+            margin-top:10%;
+            margin-left: 6%;
+            text-align:center;
+          
+          }
+          .gall-txt{
+            margin-top:1%;
+            margin-left:5%;
+            margin-right: 0px;
+            text-align:center;
+          
+          }
+
+
+
+
+          #demo{
+            display:block;
+            width:100px;
+            line-height:30px;
+            margin-left: 35%;
+            margin-top: 2%;
+            }
+            #hed{
+              margin-top: 3%;
+              margin-left: 0%;
+              text-align:center;
+            }
+            #hed1{
+              margin-top: 3%;
+              margin-left: 0%;
+              text-align:center;
+              padding-bottom: 5%;
+            }
+            #hed2{
+              margin-top: 3%;
+              margin-left: 0%;
+              text-align:center;
+              padding-bottom: 5%;
+            }
+            .step1,.step2,.step3{
+              /* background-color:#958CFF ; */
+              width: 25%;
+              border:2px solid #958CFF;
+              padding: 10px 27px;
+              margin-top: 10%;
+              margin-left: 5%;
+              float:left;
+              border-radius: 10px;
+              height: 231px;
+            }
+             
+              #demo1,#demo3,#demo5,#demo8,#demo10,#demo12,#demo14,#demo17,#demo20 {
+              width: 150px;
+              height:90px;
+              font-size: 20px;
+              margin-left: 4%;
+              margin-top:1%;
+            }
+            #demo2, #demo4 ,#demo6,#demo9,#demo11,#demo13,#demo15,#demo18,#demo21{
+              width: 150px;
+              height:90px;
+              font-size: 20px;
+              margin-left: 52%;
+              margin-top:-26%;
+            }
+            #demo7,#demo16,#demo19{
+              width: 150px;
+              height:90px;
+              font-size: 20px;
+              margin-left: 28%;
+              margin-top:1%;
+            }
+            form .field input{
+              margin-left: 1%;
+              width: 90%;
+            }
+            .help{
+              margin-left:1%;
+            }
+            #formuleF{
+              width: 250px;
+              margin-left: 15%;
+              margin-top:15%;
+            }
+            .submit{
+              margin-left:2%;
+              margin-top: 1%;
+              width: 100px;
+            }
+            #result{
+              width: 210px;
+              margin-left: 10%;
+              margin-top:15%;
+            }
+  }
+
+
+
+
+
+
+
+
+
